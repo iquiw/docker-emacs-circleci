@@ -1,4 +1,4 @@
-FROM circleci/buildpack-deps:stretch-curl
+FROM buildpack-deps:stretch-curl
 
 RUN apt-get update && \
     apt-get install -y --no-install-recommends emacs25-nox python3 && \
