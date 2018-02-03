@@ -5,3 +5,5 @@ RUN apt-get update && \
     rm -rf /var/lib/apt/lists/*
 
 RUN curl -fsSkL https://raw.github.com/cask/cask/master/go | python
+
+ENV PATH=/root/.cask/bin:$PATH
