@@ -1,7 +1,7 @@
 FROM debian:stretch
 
 ENV DEBIAN_FRONTEND=noninteractive
-ENV EMACS_PACKAGE=emacs25-nox
+ENV EMACS_PACKAGE=emacs24-nox
 
 RUN apt-get update && \
     apt-get install -y --no-install-recommends ca-certificates curl git python "$EMACS_PACKAGE" && \
